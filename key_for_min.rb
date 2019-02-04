@@ -3,4 +3,10 @@
 
 def key_for_min_value(name_hash)
   values = name_hash.collect {|key, value| value}.sort
+
+  name_hash.each do |key, value|
+    if value == values[0]
+      return key
+    end 
+  end
 end
