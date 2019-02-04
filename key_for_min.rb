@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   if name_hash == {}
-    nil
+    return nil
   end
   values = name_hash.collect {|key, value| value}.sort
 
